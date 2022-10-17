@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CrackingTheEnigmaServer/CrackingTheEnigmaServer.iml" filepath="$PROJECT_DIR$/CrackingTheEnigmaServer/CrackingTheEnigmaServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DecryptionManager/DecryptionManager.iml" filepath="$PROJECT_DIR$/DecryptionManager/DecryptionManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Enigma/Enigma.iml" filepath="$PROJECT_DIR$/Enigma/Enigma.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Server.iml" filepath="$PROJECT_DIR$/Server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/XmlData/XmlData.iml" filepath="$PROJECT_DIR$/XmlData/XmlData.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="CrackingTheEnigmaServer:war">
+    <output-path>$PROJECT_DIR$/CrackingTheEnigmaServer/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>CrackingTheEnigmaServer</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="CrackingTheEnigmaServer-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="CrackingTheEnigmaServer:war exploded" />
+    </root>
+  </artifact>
+</component>

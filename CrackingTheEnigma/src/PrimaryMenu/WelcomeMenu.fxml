@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PrimaryMenu.WelcomeMenuController">
+  <content>
+    <AnchorPane fx:id="anchorPane" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="300.0">
+         <children>
+            <Label layoutX="90.0" layoutY="59.0" text="Who are you?">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="agentRadioBtn" layoutX="185.0" layoutY="110.0" mnemonicParsing="false" onAction="#agentChecked" text="Agent">
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </RadioButton>
+            <RadioButton fx:id="alliesRadioBtn" layoutX="112.0" layoutY="110.0" mnemonicParsing="false" onAction="#alliesChecked" text="Allies">
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </RadioButton>
+            <RadioButton fx:id="uBoatRadioBtn" layoutX="35.0" layoutY="110.0" mnemonicParsing="false" onAction="#uBoatChecked" text="UBoat">
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </RadioButton>
+            <TextArea fx:id="txtBox" layoutX="23.0" layoutY="136.0" prefHeight="5.0" prefWidth="243.0" />
+            <Button layoutX="121.0" layoutY="149.0" mnemonicParsing="false" onAction="#nextBtnClicked" text="Next" />
+            <ImageView fx:id="enigmaTitle" fitHeight="40.0" fitWidth="250.0" layoutX="20.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

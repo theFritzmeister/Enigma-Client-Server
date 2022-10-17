@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UBoat.UBoatContestMenuController">
+   <content>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <top>
+            <AnchorPane fx:id="anchorPaneTop">
+               <children>
+                  <Button fx:id="loadXmlBtn" layoutX="5.0" layoutY="60.0" mnemonicParsing="false" onAction="#loadXmlBtnListener" text="Load XML File" />
+                  <ImageView fx:id="enigmaTitle" fitHeight="60.0" fitWidth="350.0" layoutX="130.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button alignment="CENTER" layoutX="175.0" layoutY="105.0" mnemonicParsing="false" onAction="#switchToMachineMenu" prefHeight="20.0" prefWidth="100.0" text="Machine">
+                     <font>
+                        <Font size="9.0" />
+                     </font></Button>
+                  <Button layoutX="310.0" layoutY="100.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="Contest">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Label layoutX="500.0" layoutY="15.0" text="UBoat">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="40.0" layoutY="15.0" text="UBoat">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField editable="false" layoutX="102.0" layoutY="60.0" opacity="0.6" prefHeight="25.0" prefWidth="479.0" fx:id="xmlPath" />
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane fx:id="anchorPaneBottom">
+               <children>
+                  <HBox fx:id="rotorsGraphics" alignment="CENTER" layoutX="351.0" layoutY="20.0" prefHeight="50.0" prefWidth="202.0" />
+                  <TextField fx:id="message" layoutX="20.0" layoutY="32.0" prefHeight="25.0" prefWidth="300.0" promptText="Encrypt message here..." />
+                  <Button layoutX="20.0" layoutY="60.0" mnemonicParsing="false" onAction="#dictionaryBtnListener" prefHeight="20.0" prefWidth="250.0" text="Dictionary">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+                  <TextArea layoutX="320.0" layoutY="110.0" prefHeight="130.0" prefWidth="250.0" />
+                  <TextArea layoutX="20.0" layoutY="110.0" prefHeight="130.0" prefWidth="250.0" />
+                  <Label layoutX="20.0" layoutY="93.0" text="Candidates:" underline="true" />
+                  <Label layoutX="321.0" layoutY="93.0" text="Active Teams Details:" underline="true" />
+                  <Button layoutX="268.0" layoutY="32.0" mnemonicParsing="false" onAction="#readyBtnListener" text="Ready!" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </content>
+</ScrollPane>

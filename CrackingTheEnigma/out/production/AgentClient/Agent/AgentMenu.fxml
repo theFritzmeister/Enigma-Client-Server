@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Agent.AgentMenuController">
+   <content>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <top>
+            <AnchorPane fx:id="anchorPaneTop">
+               <children>
+                  <ImageView fx:id="enigmaTitle" fitHeight="60.0" fitWidth="350.0" layoutX="130.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="500.0" layoutY="15.0" text="Agent">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="40.0" layoutY="15.0" text="Agent">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane fx:id="anchorPaneBottom">
+               <children>
+                  <TextArea layoutX="82.0" layoutY="30.0" prefHeight="75.0" prefWidth="400.0" />
+                  <Label layoutX="82.0" layoutY="14.0" text="Contest and team data:" underline="true" />
+                  <TextArea layoutX="23.0" layoutY="150.0" prefHeight="120.0" prefWidth="220.0" />
+                  <TextArea layoutX="320.0" layoutY="150.0" prefHeight="120.0" prefWidth="220.0" />
+                  <Label layoutX="23.0" layoutY="133.0" text="Agent progress &amp; Status:" underline="true" />
+                  <Label layoutX="320.0" layoutY="133.0" text="Agent's Candidates:" underline="true" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </content>
+</ScrollPane>

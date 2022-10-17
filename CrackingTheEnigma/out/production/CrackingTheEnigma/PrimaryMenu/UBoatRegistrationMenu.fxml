@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PrimaryMenu.UBoatRegistrationMenuController">
+  <content>
+    <AnchorPane fx:id="anchorPane" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="300.0">
+         <children>
+            <ImageView fx:id="enigmaTitle" fitHeight="40.0" fitWidth="250.0" layoutX="20.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <TextField fx:id="uBoatName" layoutX="70.0" layoutY="87.0" />
+            <Button layoutX="121.0" layoutY="140.0" mnemonicParsing="false" onAction="#nextBtnClicked" text="Next" />
+            <Label layoutX="82.0" layoutY="62.0" text="Enter a name for UBoat:" underline="true" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
